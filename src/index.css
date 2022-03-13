@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.home, .about {
+.home,
+.about {
   background: #282d35;
   min-height: 83vh;
   color: #ffffff;
@@ -11,7 +12,6 @@
   color: #ffffff;
   background: rgb(46, 46, 46);
 }
-
 
 .content {
   height: 100%;
@@ -29,13 +29,15 @@ h1 {
   position: relative;
   z-index: 35;
 }
-.home ul, .about ul {
+.home ul,
+.about ul {
   list-style-type: none;
   position: relative;
   z-index: 20;
 }
 
-.home ul li::before, .about ul li::before {
+.home ul li::before,
+.about ul li::before {
   display: inline-block;
   vertical-align: middle;
   width: 10px;
@@ -46,7 +48,142 @@ h1 {
   content: " ";
 }
 
-.footer span a{
+.footer span a {
   color: rgb(223, 223, 79);
   text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info {
+  width: 100%;
+}
+
+.info img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.name {
+  margin-top: 2rem;
+}
+
+.name h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: 30.26px;
+}
+
+.name h3 {
+  color: #f3bf99;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 15.49px;
+  text-align: center;
+  font-size: 12.8px;
+}
+
+.name p {
+  color: #f5f5f5;
+  line-height: 15.36px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 10.24px;
+  font-family: "Inter", sans-serif;
+}
+
+.myBtn {
+  display: flex;
+}
+.name button {
+  background: #ffffff;
+  border-radius: 6px;
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+  color: #1e1f26;
+  padding: 9px 13px;
+  margin-bottom: 1.3rem;
+}
+
+.name button:hover {
+  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.name button i {
+  margin-right: 5px;
+}
+
+.parent {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.child {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.child h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.child p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 15.36px;
+  color: #dcdcdc;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.page {
+  padding: 5rem 0;
+  background: #282d35;
+  color: #ffffff;
+}
+
+.cardBody {
+  background: #1a1b21;
+  border-radius: 10px 10px;
+}
+
+.footer {
+  background: #161619;
+  display: flex;
+  justify-content: center;
+}
+.parentFooter {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.parentFooter a {
+  color: black;
+  background: #918e9b;
+  margin: 9px 0;
+  padding: 3px 10px 2px 10px;
+  border-radius: 4px;
 }
