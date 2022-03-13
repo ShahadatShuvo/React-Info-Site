@@ -1,4 +1,4 @@
-### Live Preview: https://622d85790deada0ccf25a89b--react-info-site-hossain-shuvo.netlify.app
+### Live Preview: https://react-info-site-hossain-shuvo.netlify.app
 
 # Getting Started with Create React App
 
