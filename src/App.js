@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import NoMatch from "./components/NoMatch";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
     </div>
