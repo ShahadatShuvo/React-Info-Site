@@ -2,9 +2,9 @@ import React from "react";
 
 import profilePic from "../images/me.jpg"
 
-function Contact() {
+function Contact(props) {
   return (
-    <section className="about pt-5">
+    <section className={props.darkMode ? "about pt-5" : "about pt-5 bg-light text-dark"}>
       <div className="container">
         <h3 className="text-center">Welcome to Contact page..</h3>
       </div>

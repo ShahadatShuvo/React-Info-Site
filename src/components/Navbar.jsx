@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 
 import logo from "../images/Group.svg";
 
-function Navbar() {
+function Navbar(props) {
   return (
     //  navbar section
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      className={
+        props.darkMode
+          ? "navbar navbar-expand-lg navbar-dark bg-dark"
+          : "navbar navbar-expand-lg navbar-light bg--lightMode"
+      }
+    >
       <div className="container">
         <img src={logo} className="me-md-3" alt="" />
         <Link className="navbar-brand fs-3 fw-bold" to="/">
@@ -52,6 +58,29 @@ function Navbar() {
               >
                 Contact
               </Link>
+            </li>
+            <li className="nav-item pt-2 ms-md-5">
+              <span className={props.darkMode ? "text-light" : "text-dark"}>
+                Light
+              </span>
+              <button
+                type="button"
+                // className="btn btn-sm btn-toggle"
+                className={
+                  props.darkMode
+                    ? "btn btn-sm btn-toggle active"
+                    : "btn btn-sm btn-toggle"
+                }
+                data-toggle="button"
+                aria-pressed="false"
+                // autocomplete="off"
+                onClick={props.toggleDarkMode}
+              >
+                <div className="handle"></div>
+              </button>
+              <span className={props.darkMode ? "text-light" : "text-dark"}>
+                dark
+              </span>
             </li>
           </ul>
         </div>
