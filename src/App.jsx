@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import NoMatch from "./components/NoMatch";
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState(false);
 
   function onHandleDarkMode() {
     console.log("Clicked");
@@ -27,7 +27,7 @@ function App() {
         <Route path="/contact" element={<Contact darkMode={darkMode} />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      <Footer darkMode={darkMode}/>
+      <Footer darkMode={darkMode} />
     </div>
   );
 }

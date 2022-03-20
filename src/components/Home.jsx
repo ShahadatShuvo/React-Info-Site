@@ -7,7 +7,7 @@ function Home(props) {
     // section-1 main-body
     <section className={props.darkMode ? "home" : "home bg-light text-dark"}>
       <div className="container-fluid content">
-        <img src={bgImg} className="bgImg" alt="" />
+        {props.darkMode && <img src={bgImg} className="bgImg" alt="" />}
         <div className="container pt-5">
           <div className="row">
             <div className="col">
